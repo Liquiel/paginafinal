@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.toggler{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.hamburger{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:  #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.hamburger>div{
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #f8ec3e;
+    transition: .4s;
+}
+.hamburger>div:before, .hamburger>div:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #f8ec3e;
+    transition: .4s;
+}
+.hamburger>div:before{
+    top: -10px;
+}
+.hamburger>div:after{
+    top: 10px;
+}
+.toggler:checked + .hamburger>div{
+    transform: rotate(135deg);
+}
+.toggler:checked:hover + .hamburger>div{
+    transform: rotate(225deg);
+}
+.toggler:checked + .hamburger>div:after, .toggler:checked + .hamburger>div:before{
+    transform: rotate(90deg);
+    top: 0;
+} 
+.toggler:checked ~ .menu{
+    visibility: visible;
+}
+.toggler:checked ~ .menu>div{
+    transform: translateX(-50%) translateY(-50%);
+}
+.toggler:checked ~ .menu>div>div{
+    opacity: 1;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .6s;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+.menu>div{
+    width: 1600px;
+    height: 1600px;
+    position: absolute;
+    border-radius: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu > div > div{
+    max-width: 90vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    opacity: 0;
+}
+.menu > div > div > ul > li{
+    list-style: none;
+}
+.menu > div > div > ul > li > a{
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color:#fff;
+    transition: .3s;
+}
+.menu > div > div > ul > li > a:hover{
+    color: #f8ec3e;
+}
+ 
+h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.contenedor{
+    display: flex;
+    align-items: center; 
+}
+.img{
+    margin-left: 25%;
+    margin-right: 5%;
+}
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6{
+   border-bottom: 5px solid rgb(241, 204, 171);
+   margin-bottom: 2%;
+   width: 200px;
+   cursor: pointer;
+}
+.caja1:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+.caja2:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+.caja3:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+.caja4:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+.caja5:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+.caja6:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}

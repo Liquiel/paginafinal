@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: #fffeff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234b7cb2' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.toggler {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(24, 3, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.hamburger>div {
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.hamburger>div:before,
+.hamburger>div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.hamburger>div:before {
+    top: -10px;
+}
+
+.hamburger>div:after {
+    top: 10px;
+}
+
+.toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+.toggler:checked:hover+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+.toggler:checked+.hamburger>div:after,
+.toggler:checked+.hamburger>div:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.toggler:checked~.menu {
+    visibility: visible;
+}
+
+.toggler:checked~.menu>div {
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked~.menu>div>div {
+    opacity: 1;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .6s;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+
+.menu>div {
+    width: 1600px;
+    height: 1600px;
+    position: absolute;
+    border-radius: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+    background-color: rgb(74, 56, 153);
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu>div>div {
+    max-width: 90vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.menu>div>div>ul>li {
+    list-style: none;
+}
+
+.menu>div>div>ul>li>a {
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: rgb(17, 0, 92);
+    transition: .3s;
+}
+
+.menu>div>div>ul>li>a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.item {
+    margin: 10px;
+}
+
+.container {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.primero {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: center;
+    color: rgb(24, 3, 119);
+    margin-bottom: -15%;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.segundo {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    margin-left: 8%;
+}
+
+.segundo img {
+    width: 90%;
+    height: 90%;
+}
+
+.tercero {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 85%;
+
+}
+
+.tercero h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}
+
+.cuarto {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 50%;
+}
+
+.cuarto img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+
+}
+
+.cuarto h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}
+
+.quinto {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 50%;
+}
+
+.quinto img {
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+
+}
+
+.quinto h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}
+.sexto {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 50%;
+
+}
+
+.sexto h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}
+.sexto img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+
+}
+
+.septimo {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 50%;
+}
+
+.septimo img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+
+}
+
+.septimo h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}
+.octavo{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 50%;
+}
+
+.octavo img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+
+}
+
+.octavo h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}
+.noveno{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: justify;
+    width: 50%;
+}
+
+.noveno img {
+    width: 65%;
+    height: 65%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+
+}
+
+.noveno h3 {
+    text-align: center;
+    color: rgb(24, 3, 119);
+    font-size: 30px;
+    margin: 15px;
+}

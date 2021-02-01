@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.toggler{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.hamburger{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(24, 3, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.hamburger>div{
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color:rgb(255, 255, 255);
+    transition: .4s;
+}
+.hamburger>div:before, .hamburger>div:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color:rgb(255, 255, 255);
+    transition: .4s;
+}
+.hamburger>div:before{
+    top: -10px;
+}
+.hamburger>div:after{
+    top: 10px;
+}
+.toggler:checked + .hamburger>div{
+    transform: rotate(135deg);
+}
+.toggler:checked:hover + .hamburger>div{
+    transform: rotate(225deg);
+}
+.toggler:checked + .hamburger>div:after, .toggler:checked + .hamburger>div:before{
+    transform: rotate(90deg);
+    top: 0;
+} 
+.toggler:checked ~ .menu{
+    visibility: visible;
+}
+.toggler:checked ~ .menu>div{
+    transform: translateX(-50%) translateY(-50%);
+}
+.toggler:checked ~ .menu>div>div{
+    opacity: 1;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .6s;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+.menu>div{
+    width: 1600px;
+    height: 1600px;
+    position: absolute;
+    border-radius: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+    background-color: rgb(74, 56, 153);
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu > div > div{
+    max-width: 90vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    opacity: 0;
+}
+.menu > div > div > ul > li{
+    list-style: none;
+}
+.menu > div > div > ul > li > a{
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: rgb(17, 0, 92);
+    transition: .3s;
+}
+.menu > div > div > ul > li > a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.container {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.item{
+    margin: 20px;
+    border-radius: 30px;
+    
+}
+
+.primero {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    flex-grow: 1;
+    margin-bottom: 6%;
+}
+.primero img {
+    width: 100%;
+    height: 100%;
+}
+.segundo {
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    font-size: 21px; 
+    flex-grow: 1;
+    color: rgb(24, 3, 119);
+    margin-bottom: 6%;
+    margin: auto;
+}
+.segundo h4{
+    text-align: center;
+}
+.tercero{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+
+}
+.tercero img{
+    width: 95%;
+    height: 95%;
+}
+.cuarto{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+  
+}
+.cuarto img{
+    width: 95%;
+    height: 95%;
+}
+.quinto{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+  
+}
+.quinto img{
+    width: 95%;
+    height: 95%;
+}
+.sexto{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+   
+}
+.sexto img{
+    width: 95%;
+    height: 95%;
+}
+.septimo{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+  
+}
+.septimo img{
+    width: 95%;
+    height: 95%;
+}
+.octavo{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+
+}
+.octavo img{
+    width: 95%;
+    height: 95%;
+}
+.noveno{
+    min-height: 300px;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+ 
+}
+.noveno img{
+    width: 95%;
+    height: 95%;
+}
+.container a{
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(24, 3, 119), rgb(39, 7, 179));
+}
